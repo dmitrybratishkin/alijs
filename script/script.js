@@ -34,9 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
    };
 
 
-    goodsWrapper.append(createCardGoods(1, 'Дартс', 2000, 'img/temp/archer.jpg'));
-    goodsWrapper.append(createCardGoods(2, 'Фламинго', 3000, 'img/temp/flamingo.jpg'));
-    goodsWrapper.append(createCardGoods(3, 'Носки', 333, 'img/temp/socks.jpg'));
+    // goodsWrapper.append(createCardGoods(1, 'Дартс', 2000, 'img/temp/archer.jpg'));
+    // goodsWrapper.append(createCardGoods(2, 'Фламинго', 3000, 'img/temp/flamingo.jpg'));
+    // goodsWrapper.append(createCardGoods(3, 'Носки', 333, 'img/temp/socks.jpg'));
 
     const closeCart = event => {
         const target = event.target;
