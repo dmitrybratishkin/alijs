@@ -72,8 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const randomSort = (item) => item.sort(() => Math.random() - 0.5);
-
-    const categoryFilter = goods => goods.filter(item => item.category.includes(category))
     
     const choiceCategory = event => {
         event.preventDefault();
@@ -81,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (target.classList.contains('category-item')) {
             const category = target.dataset.category;
-            getGoods(renderCard, categoryFilter);
+            getGoods(renderCard, goods => goods.filter(item => item.category.includes(category)));
         }
     };
 
