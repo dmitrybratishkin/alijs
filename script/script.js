@@ -113,10 +113,13 @@ if (goods.length) {
 
     };
 
+    const showCardBasket = goods => goods.filter(item => goodsBasket.hasOwnProperty(item.id));
+
     const openCart = event => {
         event.preventDefault();
         cart.style.display = 'flex';
         document.addEventListener('keyup', closeCart);
+        getGoods(renderBasket, showCardBasket);
     };
 
    
